@@ -94,7 +94,7 @@ print_r($user->payments); # => will print an array of Payment objects
 $payment = $user->create_payment(array('amount' => 1)); # build|create for associations.
 ```
 
-!/images/guides/has_many.png!
+![has_many](/images/has_many.png)
 
 Options (not part of [common options](associations#common-options)
 
@@ -143,7 +143,7 @@ $order = Order::first();
 print_r($order->users); # will print an array of User object
 ```
 
-!/images/guides/has_many_through.png!
+![has_many_through](/images/has_many_through.png)
 
 #### [belongs_to](#belongs_to)
 
@@ -160,7 +160,7 @@ $payment = Payment::first();
 echo $payment->user->first_name; # first_name of associated User object
 ``` 
 
-!/images/guides/belongs_to.png!
+![belongs_to](/images/belongs_to.png)
 
 Options (not part of [common options](associations#common-options)
 
@@ -178,7 +178,7 @@ class Payment extends ActiveRecord\Model {
 
 ```
 
-!/images/guides/has_one.png!
+![has_one](/images/has_one.png)
 
 Options (not part of [common options](associations#common-options)
 
@@ -214,7 +214,7 @@ class QuarterBack extends ActiveRecord\Model {
 }
 ```
 
-!/images/guides/has_one_through.png!
+![has_one_through](/images/has_one_through.png)
 
 #### [Self-referential](#self-referential)
 
@@ -226,4 +226,4 @@ class Post extends ActiveRecord\Model {
 }
 ```
 
-!/images/guides/belongs_to_self_referential.png!
+![belongs_to_self_referential](/images/belongs_to_self_referential.png)
